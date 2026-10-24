@@ -1,0 +1,98 @@
+/* Hide Streamlit default header, footer, and menu */
+header {visibility: hidden;}
+footer {visibility: hidden;}
+#MainMenu {visibility: hidden;}
+
+/* Main background */
+.stApp {
+    background: linear-gradient(180deg, #f0f4ff 0%, #ffffff 40%);
+}
+
+/* Gradient title banner */
+.hero {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #ec4899 100%);
+    padding: 28px 24px;
+    border-radius: 18px;
+    color: white;
+    text-align: center;
+    margin-bottom: 24px;
+    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.25);
+}
+.hero h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+.hero p {
+    margin: 8px 0 0 0;
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
+
+/* Chat bubbles */
+div[data-testid="stChatMessage"] {
+    border-radius: 16px;
+    padding: 6px 4px;
+}
+div[data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-user"]) {
+    background: #eef2ff;
+    border-left: 4px solid #4f46e5;
+}
+div[data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-assistant"]) {
+    background: #faf5ff;
+    border-left: 4px solid #a855f7;
+}
+
+/* Chat input */
+div[data-testid="stChatInput"] textarea {
+    border-radius: 24px !important;
+    border: 1.5px solid #c7d2fe !important;
+    padding: 12px 18px !important;
+    font-size: 1rem !important;
+    box-shadow: 0 2px 12px rgba(79, 70, 229, 0.08);
+}
+div[data-testid="stChatInput"] textarea:focus {
+    border-color: #4f46e5 !important;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+/* Sidebar cards */
+.sidebar-card {
+    background: white;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.sidebar-card h4 {
+    margin: 0 0 6px 0;
+    font-size: 0.85rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.sidebar-card p {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+/* Suggestion chips */
+.chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+.chip {
+    background: white;
+    border: 1px solid #c7d2fe;
+    color: #4f46e5;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}

@@ -1,0 +1,53 @@
+# --- Secrets ---
+.env
+.env.local
+*.key
+credentials.json
+token.pickle
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Virtual environments ---
+venv/
+env/
+ENV/
+.venv/
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+
+# --- Vector database (rebuilt by ingest.py) ---
+chroma_db/
+*.chroma
+
+# --- Uploaded documents (optional) ---
+# Uncomment the next line if you don't want to commit your PDFs
+# knowledge_base/
+
+# --- Logs and results ---
+logs/
+*.log
+results/
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Jupyter ---
+.ipynb_checkpoints/
